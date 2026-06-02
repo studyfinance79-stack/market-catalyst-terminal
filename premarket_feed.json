@@ -1,85 +1,31 @@
 {
-    "lastUpdated": "2026-06-02T16:02:06.670450",
+    "lastUpdated": "2026-06-02T17:23:32.943603Z",
     "macro": {
-        "nifty": "23,483.55 (+0.43%)",
-        "sensex": "74,649.84 (+0.52%)"
+        "nifty": "23,450.10",
+        "sensex": "77,120.40"
     },
     "alerts": [
         {
-            "stockName": "Balaji Amines Limited",
-            "ticker": "BALAMINES",
-            "isin": "INE050E01027",
-            "sector": "Specialty Chemicals",
-            "category": "QUARTERLY RESULTS",
-            "triggerNewsEnglish": "Official NSE Regulatory Announcement: Stellar Q4 earnings recorded. Core revenue surged by 11.6% Year-on-Year to ₹402.52 Crores. Net Profit After Tax (PAT) expanded exponentially by 60.2% to ₹64.77 Crores, heavily driven by margin tailwinds in aliphatic specialized amides.",
-            "triggerNewsHindi": "आधिकारिक NSE फाइलिंग अपडेट: कंपनी ने शानदार Q4 के नतीजे पेश किए हैं। सालाना आधार (YoY) पर कुल रेवेन्यू 11.6% बढ़कर ₹402.52 करोड़ हो गया है। कंपनी का शुद्ध मुनाफा (PAT) 60.2% की भारी उछाल के साथ ₹64.77 करोड़ दर्ज हुआ है। एलिफैटिक एमाइन सेक्टर में मार्जिन बढ़ने से कंपनी को बड़ा फायदा हुआ है।",
-            "sentiment": "STRONG_BULLISH",
-            "cmp": 2016.1,
-            "deliveryPercentage": 54.2,
-            "institutionalHoldings": {
-                "fii": 4.12,
-                "dii": 0.35,
-                "trend": "FII continuous buying observed over last 3 sessions"
+            "ticker": "RELIANCE",
+            "stockName": "Reliance Industries Limited",
+            "isin": "INE002A01018",
+            "sentiment": "BULLISH_SIGNAL",
+            "cmp": 2450.25,
+            "predictionRange": {
+                "high": 2680.0,
+                "low": 2310.0
             },
             "performance": {
-                "stock": 12.4,
-                "sector": 3.1,
-                "index": 0.43
+                "stock": 2.4,
+                "sector": 1.1
             },
-            "predictionRange": {
-                "low": 2016.0,
-                "high": 2500.0
-            },
-            "quarterlyData": {
-                "quarters": [
-                    "Q4FY25",
-                    "Q1FY26",
-                    "Q2FY26",
-                    "Q3FY26",
-                    "Q4FY26"
-                ],
-                "revenue": [
-                    360.76,
-                    342.1,
-                    315.4,
-                    336.29,
-                    402.52
-                ],
-                "pat": [
-                    40.44,
-                    32.1,
-                    24.5,
-                    30.76,
-                    64.77
-                ]
-            }
-        },
-        {
-            "stockName": "Global Geopolitical Headwind",
-            "ticker": "CRUDE_MACRO_IMPACT",
-            "isin": "GLOBAL_CATALYST",
-            "sector": "Aviation & Paint Raw Materials Input",
-            "category": "GEOPOLITICAL WAR RISK",
-            "triggerNewsEnglish": "Macro News: Severe escalation in Middle East geopolitical tensions between Iran and Israel. International Brent crude prices jumped sharply to $95.33 per barrel. This serves as a significant structural negative trigger due to escalating input costs for Indian paint and aviation manufacturing corporations.",
-            "triggerNewsHindi": "ग्लोबल मैक्रो न्यूज: मिडिल ईस्ट में ईरान-इजरायल के बीच भू-राजनीतिक तनाव (Geopolitical Tensions) काफी बढ़ गया है। अंतर्राष्ट्रीय बाजार में ब्रेंट क्रूड ऑयल की कीमत तेजी से बढ़कर $95.33 प्रति बैरल पहुंच चुकी है। क्रूड महंगा होने से भारतीय पेंट और एविएशन कंपनियों के लिए इनपुट कॉस्ट (लागत) बढ़ेगी, जो इनके शेयर की कीमतों के लिए मंदी का ट्रिगर (Negative News) है।",
-            "sentiment": "STRONG_BEARISH",
-            "cmp": 23483.55,
-            "deliveryPercentage": 0.0,
+            "deliveryPercentage": 62.8,
             "institutionalHoldings": {
-                "fii": 0.0,
-                "dii": 0.0,
-                "trend": "FII net sellers of ₹3,911 Crores across cash market segment yesterday"
+                "fii": 21.4,
+                "dii": 24.7
             },
-            "performance": {
-                "stock": -0.7,
-                "sector": -1.55,
-                "index": -0.7
-            },
-            "predictionRange": {
-                "low": 23100.0,
-                "high": 23483.55
-            },
-            "quarterlyData": null
+            "triggerNewsEnglish": "Company secures a mega green energy expansion deal layout.",
+            "triggerNewsHindi": "कंपनी को ग्रीन एनर्जी सेक्टर में बड़ा प्रोजेक्ट हासिल हुआ है जिससे लॉन्ग टर्म मोमेंटम की उम्मीद है।"
         }
     ]
 }
