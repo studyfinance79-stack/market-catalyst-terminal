@@ -1,0 +1,30 @@
+name: Live Intraday Pipeline
+
+on:
+  schedule:
+    # Runs every 5 minutes from Monday to Friday during Indian Market Hours (03:30 AM UTC to 10:05 AM UTC)
+    - cron: '*/5 3-10 * * 1-5'
+  workflow_dispatch: # Allows you to run it manually with 1 click anytime
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Access Repository Code
+      uses: actions/checkout@v4
+
+    - name: Setup Python environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Process Catalyst Logic
+      run: python cron_job.py
+
+    - name: Deploy Live Changes to App Link
+      run: |
+        git config --global user.name "MarketTerminalBot"
+        git config --global user.email "bot@terminal.com"
+        git add premarket_feed.json
+        git commit -m "Real-time Intraday Pulse Synchronized [Skip CI]" || exit 0
+        git push
