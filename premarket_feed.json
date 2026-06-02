@@ -1,10 +1,55 @@
 {
-    "lastUpdated": "2026-06-02T17:23:32.943603Z",
+    "lastUpdated": "2026-06-02T17:29:08.531577Z",
     "macro": {
-        "nifty": "23,450.10",
-        "sensex": "77,120.40"
+        "nifty": "23,483.55 (+0.43%)",
+        "sensex": "76,649.84 (+0.52%)"
     },
     "alerts": [
+        {
+            "ticker": "BALAMINES",
+            "stockName": "Balaji Amines Limited",
+            "isin": "INE050E01027",
+            "sentiment": "BULLISH_SIGNAL",
+            "cmp": 2016.1,
+            "predictionRange": {
+                "high": 2500.0,
+                "low": 1800.0
+            },
+            "performance": {
+                "stock": 12.4,
+                "sector": 3.1
+            },
+            "deliveryPercentage": 54.2,
+            "institutionalHoldings": {
+                "fii": 4.12,
+                "dii": 0.35
+            },
+            "triggerNewsEnglish": "Official NSE Regulatory Announcement: Stellar Q4 earnings recorded. Core revenue surged by 11.6% Year-on-Year to ₹402.52 Crores. Net Profit After Tax (PAT) expanded exponentially by 60.2% to ₹64.77 Crores, heavily driven by margin tailwinds in aliphatic specialized amides.",
+            "triggerNewsHindi": "आधिकारिक NSE फाइलिंग अपडेट: कंपनी ने शानदार Q4 के नतीजे पेश किए हैं। सालाना आधार पर (YoY) कुल रेवेन्यू 11.6% बढ़कर ₹402.52 करोड़ हो गया है। कंपनी का शुद्ध मुनाफा (PAT) 60.2% की भारी उछाल के साथ ₹64.77 करोड़ दर्ज हुआ है। एलिफैटिक एमाइन सेक्टर में मार्जिन बढ़ने से कंपनी को बड़ा फायदा हुआ है।",
+            "quarterlyData": {
+                "quarters": [
+                    "Q4FY25",
+                    "Q1FY26",
+                    "Q2FY26",
+                    "Q3FY26",
+                    "Q4FY26"
+                ],
+                "revenue": [
+                    360.76,
+                    342.1,
+                    315.4,
+                    336.29,
+                    402.52
+                ],
+                "pat": [
+                    42.1,
+                    38.45,
+                    34.2,
+                    40.12,
+                    64.77
+                ]
+            }
+        },
         {
             "ticker": "RELIANCE",
             "stockName": "Reliance Industries Limited",
@@ -24,8 +69,8 @@
                 "fii": 21.4,
                 "dii": 24.7
             },
-            "triggerNewsEnglish": "Company secures a mega green energy expansion deal layout.",
-            "triggerNewsHindi": "कंपनी को ग्रीन एनर्जी सेक्टर में बड़ा प्रोजेक्ट हासिल हुआ है जिससे लॉन्ग टर्म मोमेंटम की उम्मीद है।"
+            "triggerNewsEnglish": "Secures strategic high-capacity offshore extraction confirmation contracts from domestic regulatory bodies.",
+            "triggerNewsHindi": "कंपनी ने घरेलू नियामक निकायों से रणनीतिक उच्च क्षमता वाले अपतटीय निष्कर्षण अनुबंध सुरक्षित किए हैं।"
         }
     ]
 }
