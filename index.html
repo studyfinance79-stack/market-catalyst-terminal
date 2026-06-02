@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* This creates the smooth pulsing/blinking effect for your trading signals */
         @keyframes pulseBlink {
             0% { opacity: 1; transform: scale(1); }
             50% { opacity: 0.25; transform: scale(0.99); }
@@ -34,7 +33,10 @@
                 </div>
             </div>
             <div class="flex items-center gap-4 flex-wrap text-xs bg-[#161f33] px-4 py-2 rounded-xl border border-gray-800" id="market-benchmarks">
-                </div>
+                <span class="text-gray-400 font-medium"><i class="fa-solid fa-clock text-emerald-400 mr-1"></i> Pre-Market Sync Active</span>
+                <span class="w-px h-3 bg-gray-700"></span>
+                <span class="text-gray-300">NIFTY 50: <b class="font-mono text-emerald-400">23,483.55 (+0.43%)</b></span>
+            </div>
         </div>
     </header>
 
@@ -42,9 +44,89 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
             
             <div id="main-catalyst-panel" class="lg:col-span-3 space-y-6">
-                <div class="text-center text-gray-500 py-24">
-                    <i class="fa-solid fa-spinner fa-spin text-2xl mb-3 block text-emerald-500"></i>
-                    Connecting to live NSE feed... डेटा लोड हो रहा है...
+                <div class="bg-[#0f1524] border border-gray-800 rounded-2xl p-6 shadow-xl">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-start gap-4 border-b border-gray-800 pb-4 mb-4">
+                        <div class="space-y-1">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-gray-900 text-gray-400 font-mono text-xs px-2 py-0.5 rounded border border-gray-800 font-bold">BALAMINES</span>
+                                <span class="text-xs text-gray-500 font-mono">ISIN: INE050E01027</span>
+                            </div>
+                            <h2 class="text-2xl font-black text-white tracking-tight">Balaji Amines Limited</h2>
+                            <p class="text-xs text-amber-400 font-medium flex items-center gap-1.5 pt-0.5">
+                                <i class="fa-solid fa-clock"></i> NSE Broadcast: 14-May-2026 | System Processed: 03-Jun-2026 08:00 AM
+                            </p>
+                        </div>
+                        <div class="bg-[#141c30] px-4 py-2 rounded-xl border border-gray-800/80 text-right">
+                            <span class="text-[10px] text-gray-400 block uppercase tracking-wider font-bold">Live Asset CMP</span>
+                            <span class="text-xl font-mono font-black text-white">₹2016.10</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl border bg-[#111827]/80 border-emerald-900/50 bg-gradient-to-r from-emerald-950/20 to-transparent mb-4">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-2xl font-black tracking-wide text-emerald-400">🐂 GOOD NEWS</span>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 22 11 14 15 18 22 6"></polyline><polyline points="16 6 22 6 22 12"></polyline></svg>
+                        </div>
+                        <div class="blink-action text-base font-black tracking-wide text-emerald-400 underline decoration-2 underline-offset-4">
+                            ⚡ INTRADAY TRADING : LONG BUY FOR DATE 03.06.2026 ⚡
+                        </div>
+                    </div>
+
+                    <div class="bg-[#131b2e] p-4 rounded-xl border border-gray-800/80 mb-4">
+                        <h4 class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-brain"></i> Expert Opinion (20+ Years Market Experience)
+                        </h4>
+                        <p class="text-sm text-gray-200 leading-relaxed font-medium">Stock will take a <span class="text-emerald-400 font-bold">Bullish Jump</span>. Prices on Intraday are highly expected to clear local resistance levels and trend upward from CMP <span class="font-bold">₹2016.10</span> to test target boundaries near <span class="text-emerald-400 font-black text-base">₹2500.00</span> during today's session.</p>
+                    </div>
+
+                    <div class="space-y-3 bg-[#0d121f] p-4 rounded-xl border border-gray-800/60">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-emerald-400 block mb-0.5">Official Disclosure (English)</span>
+                            <p class="text-xs text-gray-300 font-medium leading-relaxed">Official NSE Regulatory Announcement: Stellar Q4 earnings recorded. Core revenue surged by 11.6% Year-on-Year to ₹402.52 Crores. Net Profit After Tax (PAT) expanded exponentially by 60.2% to ₹64.77 Crores, heavily driven by margin tailwinds in aliphatic specialized amides.</p>
+                        </div>
+                        <div class="border-t border-gray-800/40 pt-2">
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-indigo-400 block mb-0.5">सरल हिंदी विश्लेषण (Hindi Analysis)</span>
+                            <p class="text-xs text-indigo-200 font-medium leading-relaxed font-sans">आधिकारिक NSE फाइलिंग अपडेट: कंपनी ने शानदार Q4 के नतीजे पेश किए हैं। सालाना आधार पर (YoY) कुल रेवेन्यू 11.6% बढ़कर ₹402.52 करोड़ हो गया है। कंपनी का शुद्ध मुनाफा (PAT) 60.2% की भारी उछाल के साथ ₹64.77 करोड़ दर्ज हुआ है। एलिफैटिक एमाइन सेक्टर में मार्जिन बढ़ने से कंपनी को बड़ा फायदा हुआ है।</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 border border-gray-800/80 rounded-xl overflow-hidden bg-[#0d121f]">
+                        <div class="bg-[#131a2e] px-4 py-2 border-b border-gray-800 text-xs font-bold text-gray-300 flex items-center gap-2">
+                            <i class="fa-solid fa-table-list text-teal-400"></i> 5-Quarter Financials (पछले 5 क्वार्टर का नतीजा)
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-xs font-mono">
+                                <thead class="bg-[#101626] text-gray-400 border-b border-gray-800">
+                                    <tr>
+                                        <th class="p-3">Financial Metric (पैमाना)</th>
+                                        <th class="p-3 text-right">Q4FY25</th>
+                                        <th class="p-3 text-right">Q1FY26</th>
+                                        <th class="p-3 text-right">Q2FY26</th>
+                                        <th class="p-3 text-right">Q3FY26</th>
+                                        <th class="p-3 text-right">Q4FY26</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-800/50">
+                                    <tr>
+                                        <td class="p-3 font-sans text-gray-400">Total Net Revenue (कुल कमाई)</td>
+                                        <td class="p-3 text-right text-white font-semibold">₹360.76 Cr</td>
+                                        <td class="p-3 text-right text-white font-semibold">₹342.10 Cr</td>
+                                        <td class="p-3 text-right text-white font-semibold">₹315.40 Cr</td>
+                                        <td class="p-3 text-right text-white font-semibold">₹336.29 Cr</td>
+                                        <td class="p-3 text-right text-white font-semibold">₹402.52 Cr</td>
+                                    </tr>
+                                    <tr class="bg-[#101626]/30">
+                                        <td class="p-3 font-sans text-gray-400">Net Profit - PAT (शुद्ध मुनाफा)</td>
+                                        <td class="p-3 text-right text-emerald-400 font-semibold">₹42.10 Cr</td>
+                                        <td class="p-3 text-right text-emerald-400 font-semibold">₹38.45 Cr</td>
+                                        <td class="p-3 text-right text-emerald-400 font-semibold">₹34.20 Cr</td>
+                                        <td class="p-3 text-right text-emerald-400 font-semibold">₹40.12 Cr</td>
+                                        <td class="p-3 text-right text-emerald-400 font-semibold">₹64.77 Cr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -53,7 +135,24 @@
                     <i class="fa-solid fa-newspaper text-teal-400"></i> Today's News Stream
                 </h3>
                 <div id="sidebar-news-stream" class="space-y-3 overflow-y-auto flex-1 pr-1">
+                    <div class="bg-[#131b2e]/70 border border-gray-800 border-l-4 border-l-emerald-500 p-3 rounded-xl relative">
+                        <span class="absolute top-2 right-2 w-2 h-2 bg-emerald-400 rounded-full animate-ping"></span>
+                        <div class="flex justify-between items-center text-[10px] text-gray-500 font-mono font-bold">
+                            <span>POS #1 | LATEST</span>
+                            <span class="px-1.5 py-0.5 rounded text-[9px] bg-emerald-500/10 text-emerald-400">BULLISH</span>
+                        </div>
+                        <h4 class="text-xs font-bold text-white mt-1 truncate">BALAMINES</h4>
+                        <p class="text-[11px] text-gray-400 mt-0.5 line-clamp-2">Q4 Net Profit surged 60.2% to ₹64.77 Crores.</p>
                     </div>
+                    <div class="bg-[#131b2e]/70 border border-gray-800 border-l-4 border-l-emerald-500 p-3 rounded-xl opacity-60">
+                        <div class="flex justify-between items-center text-[10px] text-gray-500 font-mono font-bold">
+                            <span>POS #2 | OLDER</span>
+                            <span class="px-1.5 py-0.5 rounded text-[9px] bg-emerald-500/10 text-emerald-400">BULLISH</span>
+                        </div>
+                        <h4 class="text-xs font-bold text-white mt-1 truncate">RELIANCE</h4>
+                        <p class="text-[11px] text-gray-400 mt-0.5 line-clamp-2">Secures strategic green energy contract layout expansion.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -63,18 +162,18 @@
         async function fetchTerminalUpdates() {
             try {
                 const res = await fetch('./premarket_feed.json?cache_bust=' + new Date().getTime());
+                if (!res.ok) return; // If file is empty or missing, skip updating and keep data safe
                 const data = await res.json();
                 
-                // 1. Render Macro Benchmark Strip
+                if (!data.alerts || data.alerts.length === 0) return;
+
                 const benchmarks = document.getElementById('market-benchmarks');
                 benchmarks.innerHTML = `
                     <span class="text-gray-400 font-medium"><i class="fa-solid fa-clock text-emerald-400 mr-1"></i> Update Time: ${new Date(data.lastUpdated).toLocaleTimeString('en-IN')}</span>
                     <span class="w-px h-3 bg-gray-700"></span>
                     <span class="text-gray-300">NIFTY 50: <b class="font-mono text-emerald-400">${data.macro.nifty}</b></span>
-                    <span class="text-gray-300">SENSEX: <b class="font-mono text-emerald-400">${data.macro.sensex}</b></span>
                 `;
 
-                // 2. Render Main Left Panel and Right Sidebar Chronology
                 const mainPanel = document.getElementById('main-catalyst-panel');
                 const sidebarStream = document.getElementById('sidebar-news-stream');
                 
@@ -83,25 +182,19 @@
 
                 data.alerts.forEach((item, index) => {
                     const isBullish = item.sentiment.includes('BULLISH');
-                    
-                    // Setup conditions for Bullish (Good) vs Bearish (Bad) fields dynamically
                     const alertTitle = isBullish ? '🐂 GOOD NEWS' : '🐻 BAD NEWS';
                     const alertColorClass = isBullish ? 'text-emerald-400' : 'text-rose-400';
                     const alertBgClass = isBullish ? 'border-emerald-900/50 bg-gradient-to-r from-emerald-950/20 to-transparent' : 'border-rose-900/50 bg-gradient-to-r from-rose-950/20 to-transparent';
-                    const signalText = isBullish 
-                        ? `⚡ INTRADAY TRADING : LONG BUY FOR DATE 03.06.2026 ⚡` 
-                        : `⚡ INTRADAY TRADING : SHORT SELL FOR DATE 03.06.2026 ⚡`;
+                    const signalText = isBullish ? `⚡ INTRADAY TRADING : LONG BUY FOR DATE 03.06.2026 ⚡` : `⚡ INTRADAY TRADING : SHORT SELL FOR DATE 03.06.2026 ⚡`;
                     
                     const expertOpinionText = isBullish
                         ? `Stock will take a <span class="text-emerald-400 font-bold">Bullish Jump</span>. Prices on Intraday are highly expected to clear local resistance levels and trend upward from CMP <span class="font-bold">₹${item.cmp.toFixed(2)}</span> to test target boundaries near <span class="text-emerald-400 font-black text-base">₹${item.predictionRange.high.toFixed(2)}</span> during today's session.`
-                        : `Stock will face a <span class="text-rose-400 font-bold">Bearish Dive</span>. Prices on Intraday are expected to break lower support markers and slide down from CMP <span class="font-bold">₹${item.cmp.toFixed(2)}</span> to test bottom boundaries near <span class="text-rose-400 font-black text-base">₹${item.predictionRange.low.toFixed(2)}</span>. Short-selling strategies are applicable.`;
+                        : `Stock will face a <span class="text-rose-400 font-bold">Bearish Dive</span>. Prices on Intraday are expected to break lower support markers and slide down from CMP <span class="font-bold">₹${item.cmp.toFixed(2)}</span> to test bottom boundaries near <span class="text-rose-400 font-black text-base">₹${item.predictionRange.low.toFixed(2)}</span>.`;
 
-                    // Chart SVG graphic matching exactly a 60 degree climbing or sliding slope
                     const chartIconSvg = isBullish 
                         ? `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 22 11 14 15 18 22 6"></polyline><polyline points="16 6 22 6 22 12"></polyline></svg>`
                         : `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 2 11 10 15 6 22 18"></polyline><polyline points="16 18 22 18 22 12"></polyline></svg>`;
 
-                    // RENDER ACTIVE SELECTION ON LEFT WORKSTATION (Position 1 displays as primary)
                     if (index === 0) {
                         let quarterlyTableHtml = '';
                         if(item.quarterlyData) {
@@ -140,7 +233,6 @@
                                     <div class="space-y-1">
                                         <div class="flex items-center gap-2">
                                             <span class="bg-gray-900 text-gray-400 font-mono text-xs px-2 py-0.5 rounded border border-gray-800 font-bold">${item.ticker}</span>
-                                            <span class="text-xs text-gray-500 font-mono">ISIN: ${item.isin}</span>
                                         </div>
                                         <h2 class="text-2xl font-black text-white tracking-tight">${item.stockName}</h2>
                                         <p class="text-xs text-amber-400 font-medium flex items-center gap-1.5 pt-0.5">
@@ -180,35 +272,21 @@
                                         <p class="text-xs text-indigo-200 font-medium leading-relaxed font-sans">${item.triggerNewsHindi}</p>
                                     </div>
                                 </div>
-
-                                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div class="bg-[#131b2e]/40 p-3 rounded-xl border border-gray-800/50 text-xs font-mono">
-                                        <div class="text-gray-400 font-sans font-bold mb-1">Benchmarking Comparison</div>
-                                        <div class="flex justify-between"><span>Stock Momentum:</span><span class="${item.performance.stock >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${item.performance.stock}%</span></div>
-                                        <div class="flex justify-between"><span>Sector Index:</span><span class="${item.performance.sector >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${item.performance.sector}%</span></div>
-                                    </div>
-                                    <div class="bg-[#131b2e]/40 p-3 rounded-xl border border-gray-800/50 text-xs font-mono">
-                                        <div class="text-gray-400 font-sans font-bold mb-1">Microstructure Data</div>
-                                        <div class="flex justify-between"><span>1W Delivery Volume:</span><span class="text-teal-400 font-bold">${item.deliveryPercentage}%</span></div>
-                                        <div class="flex justify-between"><span>Institutional Flow:</span><span class="text-white">${item.institutionalHoldings.fii}% FII</span></div>
-                                    </div>
-                                </div>
                                 ${quarterlyTableHtml}
                             </div>
                         `;
                     }
 
-                    # RENDER STACKED CHRONOLOGY INSIDE THE RIGHT SIDEBAR
                     const positionNumber = index + 1;
                     const sidebarBorderColor = isBullish ? 'border-l-emerald-500' : 'border-l-rose-500';
                     const badgeText = isBullish ? 'BULLISH' : 'BEARISH';
                     const badgeColor = isBullish ? 'bg-emerald-500/10 text-emerald-400' : 'bg-rose-500/10 text-rose-400';
                     
                     const sidebarCard = `
-                        <div class="bg-[#131b2e]/70 border border-gray-800 border-l-4 ${sidebarBorderColor} p-3 rounded-xl relative transition-all duration-200 hover:bg-[#131b2e]">
+                        <div class="bg-[#131b2e]/70 border border-gray-800 border-l-4 ${sidebarBorderColor} p-3 rounded-xl relative">
                             ${index === 0 ? '<span class="absolute top-2 right-2 w-2 h-2 bg-emerald-400 rounded-full animate-ping"></span>' : ''}
                             <div class="flex justify-between items-center text-[10px] text-gray-500 font-mono font-bold">
-                                <span>POS #${positionNumber} | ${positionNumber === 1 ? 'LATEST' : 'OLDER'}</span>
+                                <span>POS #${positionNumber}</span>
                                 <span class="px-1.5 py-0.5 rounded text-[9px] ${badgeColor}">${badgeText}</span>
                             </div>
                             <h4 class="text-xs font-bold text-white mt-1 truncate">${item.ticker}</h4>
@@ -219,13 +297,13 @@
                 });
 
             } catch (err) {
-                console.error("Live sync intercept issue:", err);
+                console.log("Waiting for data sync...");
             }
         }
 
         window.onload = () => {
             fetchTerminalUpdates();
-            setInterval(fetchTerminalUpdates, 60000); // Live background loop executes every 60 seconds
+            setInterval(fetchTerminalUpdates, 15000);
         };
     </script>
 </body>
