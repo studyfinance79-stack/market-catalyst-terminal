@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2026-06-03T04:38:42.407666Z",
+    "lastUpdated": "2026-06-03T13:34:31.369017Z",
     "macro": {
         "nifty": "23,483.55 (+0.43%)",
         "sensex": "76,649.84 (+0.52%)"
@@ -49,28 +49,6 @@
                     64.77
                 ]
             }
-        },
-        {
-            "ticker": "RELIANCE",
-            "stockName": "Reliance Industries Limited",
-            "isin": "INE002A01018",
-            "sentiment": "BULLISH_SIGNAL",
-            "cmp": 2450.25,
-            "predictionRange": {
-                "high": 2680.0,
-                "low": 2310.0
-            },
-            "performance": {
-                "stock": 2.4,
-                "sector": 1.1
-            },
-            "deliveryPercentage": 62.8,
-            "institutionalHoldings": {
-                "fii": 21.4,
-                "dii": 24.7
-            },
-            "triggerNewsEnglish": "Secures strategic high-capacity offshore extraction confirmation contracts from domestic regulatory bodies.",
-            "triggerNewsHindi": "कंपनी ने घरेलू नियामक निकायों से रणनीतिक उच्च क्षमता वाले अपतटीय निष्कर्षण अनुबंध सुरक्षित किए हैं।"
         }
     ]
 }
